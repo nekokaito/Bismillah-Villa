@@ -10,6 +10,8 @@ import type { Route } from "./+types/root";
 import "./app.css";
 import { ThemeProvider } from "./components/ui/theme-provider";
 import { ClientOnly } from "./utils/client-only";
+import { Navbar } from "./components/global/navbar";
+import { Footer } from "./components/global/footer";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -34,7 +36,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
       {/* ThemeProvider wrapped with ClientOnly */}
       <ClientOnly>
         <ThemeProvider defaultTheme="dark" storageKey="app-theme">
+          <Navbar />
           {children}
+          <Footer />
         </ThemeProvider>
       </ClientOnly>
 

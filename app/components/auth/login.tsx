@@ -48,12 +48,7 @@ const Login = ({
               className="text-sm"
               required
             />
-            <Input
-              type="password"
-              placeholder="Password"
-              className="text-sm"
-              required
-            />
+
             <Button type="submit" className="w-full">
               {buttonText}
             </Button>

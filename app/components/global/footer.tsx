@@ -24,8 +24,8 @@ interface Footer2Props {
 
 const Footer = ({
   logo = {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
-    alt: "blocks for shadcn/ui",
+    src: "",
+    alt: "logo",
     title: "Bismillah Villa",
     url: "https://www.shadcnblocks.com",
   },

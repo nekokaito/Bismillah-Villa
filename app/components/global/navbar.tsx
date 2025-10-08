@@ -106,7 +106,7 @@ const HamburgerIcon = ({
   </svg>
 );
 
-// User Menu Component
+
 const UserMenu = ({
   userName = "John Doe",
   userEmail = "john@example.com",
